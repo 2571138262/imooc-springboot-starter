@@ -17,7 +17,7 @@ import org.springframework.stereotype.Component;
 public class Resource {
 
     private String name;
-    private String webSite;
+    private String website;
     private String language;
 
 
@@ -29,12 +29,12 @@ public class Resource {
         this.name = name;
     }
 
-    public String getWebSite() {
-        return webSite;
+    public String getWebsite() {
+        return website;
     }
 
-    public void setWebSite(String webSite) {
-        this.webSite = webSite;
+    public void setWebsite(String webSite) {
+        this.website = webSite;
     }
 
     public String getLanguage() {
