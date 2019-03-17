@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8" />
-    <title></title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
 FreeMarker模板引擎

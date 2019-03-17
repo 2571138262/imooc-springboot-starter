@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!--<script th:src="@{/static/js/test.js}"></script>-->
+</head>
+<body>
+    <div>
+        用户姓名：<input th:id="${user.name}" th:name="${user.name}" th:value="${user.name}"/>
+        <br/>
+        用户年龄：<input th:value="${user.age}"/>
+        <br/>
+        用户生日：<input th:value="${user.birthday}"/>
+        <br/>
+    </div>
+    <br/>
+    <span th:text="${user.desc}">abc</span>
+    <br/>
+    <span th:utext="${user.desc}">abc</span>
+    <br/>
+
+    <form th:action="@{/th/postform}" th:object="${user}" method="post" th:method="post">
+        <input type="text" th:field="*{name}"/>
+        <input type="submit"/>
+    </form>
+</body>
+</html>
